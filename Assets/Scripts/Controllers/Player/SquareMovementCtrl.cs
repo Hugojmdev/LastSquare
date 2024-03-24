@@ -16,6 +16,10 @@ public class SquareMovementCtrl : MonoBehaviour {
     private float jumpColliderOffset; 
     #endregion 
 
+    void Start() {
+        //GetComponent<Rigidbody2D>().inertia = 0;
+    }
+
     // Update is called once per frame
     void Update() {
         Walk();
@@ -28,7 +32,7 @@ public class SquareMovementCtrl : MonoBehaviour {
 
     private void Walk(){
         // Get the horizontal input
-        float horizontalInput = Input.GetAxis("Horizontal");
+        float horizontalInput = Input.GetAxisRaw("Horizontal");
         // Calculate the movement amount based on input and speed
         float movement = horizontalInput * moveSpeed * Time.deltaTime;
         // Calculate the new position
@@ -49,7 +53,8 @@ public class SquareMovementCtrl : MonoBehaviour {
 
     private void Jump(){
         // Apply vertical force to make the player jump
-        GetComponent<Rigidbody2D>().AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);;
+        //GetComponent<Rigidbody2D>().AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
+        GetComponent<Rigidbody2D>().velocity = Vector2.up * jumpForce;
     }
 
     //This will verify if player is grounded.

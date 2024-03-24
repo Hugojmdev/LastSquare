@@ -1044,7 +1044,7 @@ CompositeCollider2D:
   m_GameObject: {fileID: 307976091}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 01b3db3fc17c2e14baed0edb3486afe7, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -9960,7 +9960,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 0.52
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 2
   m_Material: {fileID: 6200000, guid: 01b3db3fc17c2e14baed0edb3486afe7, type: 2}
   m_IncludeLayers:
@@ -9986,7 +9986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5.7
-  jumpForce: 5
+  jumpForce: 10
   jumpRange: {x: 0.96, y: 0.1}
   jumpColliderOffset: 0.06
 --- !u!61 &2086763781
