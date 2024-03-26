@@ -3,20 +3,31 @@ using UnityEngine;
 public class SquareMovementCtrl : MonoBehaviour {
 
     #region Walk variables
+
     [SerializeField]
     float moveSpeed = 5f; // Speed at which the object will move
+
     #endregion
 
     #region Jump variables
+
     [SerializeField]
     private float jumpForce = 5f; // Force applied when jumping
+
     [SerializeField] 
     private Vector2 jumpRange = new Vector2(0.8f,0.2f);
+
     [SerializeField]
     private float jumpColliderOffset; 
+
     #endregion 
 
+    #region components
+    private Rigidbody2D rigidBody;
+    #endregion
+
     void Start() {
+        rigidBody =  GetComponent<Rigidbody2D>();
         //GetComponent<Rigidbody2D>().inertia = 0;
     }
 
@@ -53,8 +64,8 @@ public class SquareMovementCtrl : MonoBehaviour {
 
     private void Jump(){
         // Apply vertical force to make the player jump
-        //GetComponent<Rigidbody2D>().AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
-        GetComponent<Rigidbody2D>().velocity = Vector2.up * jumpForce;
+        //rigidBody.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
+        rigidBody.velocity = Vector2.up * jumpForce;
     }
 
     //This will verify if player is grounded.
