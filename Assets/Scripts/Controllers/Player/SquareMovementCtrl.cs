@@ -71,7 +71,7 @@ public class SquareMovementCtrl : MonoBehaviour {
     private bool IsGrounded(){
         Vector2 position = new Vector2(transform.position.x, transform.position.y - jumpColliderOffset);
         RaycastHit2D hit = Physics2D.BoxCast(position, jumpRange, 0.0f, Vector2.down,  0.0f);
-        if (hit.collider != null && hit.collider.tag == TAG.GROUND) {
+        if (hit.collider != null && hit.collider.tag == Tag.GROUND) {
             return true;
         }
         return false;

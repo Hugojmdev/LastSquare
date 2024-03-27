@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 282779928}
   m_Layer: 0
   m_Name: SpikesTilemap
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10382,6 +10382,7 @@ GameObject:
   - component: {fileID: 2086763779}
   - component: {fileID: 2086763781}
   - component: {fileID: 2086763780}
+  - component: {fileID: 2086763782}
   m_Layer: 3
   m_Name: Square
   m_TagString: Player
@@ -10495,7 +10496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e659feb37cb1a3042bc55ca08ed573b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8
+  moveSpeed: 7
   jumpForce: 15
   jumpRange: {x: 0.96, y: 0.1}
   jumpColliderOffset: 0.06
@@ -10544,6 +10545,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2086763782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086763775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d39ed9f223eac6743a48cd193ad5aa3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

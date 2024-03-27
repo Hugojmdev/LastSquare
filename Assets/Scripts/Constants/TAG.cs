@@ -1,3 +1,4 @@
-public static class TAG{
+public static class Tag{
     public const string GROUND = "Ground";
+    public const string SPIKE = "Spike";
 }

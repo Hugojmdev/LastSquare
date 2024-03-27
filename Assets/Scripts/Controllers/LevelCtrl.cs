@@ -7,9 +7,11 @@ public class LevelCtrl : MonoBehaviour {
     public void SetLevelState(LEVEL_STATE levelState){
         this.levelState = levelState;
     } 
+    
     // Start is called before the first frame update
     void Start() {
-        
+        //TODO temporary solution, needs to be updated because it's updating to default values everytime game starts.
+        DataManager.Save(new Data(new Square()));
     }
 
     // Update is called once per frame

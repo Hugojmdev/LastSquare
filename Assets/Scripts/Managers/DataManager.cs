@@ -2,17 +2,15 @@ using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
-public static class SaveManager {
+public static class DataManager {
 
     static string path = Application.persistentDataPath + "/the-last-square.save";
     static BinaryFormatter formatter = new BinaryFormatter();
-
 
     public static void Save(Data data){
         FileStream stream = new FileStream(path, FileMode.OpenOrCreate);
         formatter.Serialize(stream, data);
         stream.Close();
-        
     }
 
     public static Data Load(){
@@ -25,6 +23,23 @@ public static class SaveManager {
             Debug.Log("Save file not found in: " + path);
             return new Data(); // Return empty data
         }
+    }
+
+    public static Data SaveAndLoad(Data data){
+        if (File.Exists(path)) {
+            FileStream stream = new FileStream(path, FileMode.Open);
+            formatter.Serialize(stream, data);
+            Data storedData = (Data)formatter.Deserialize(stream);
+            stream.Close();
+            return storedData;
+        } else {
+            Debug.Log("Save file not found in: " + path);
+            return new Data(); // Return empty data
+        }
+    }
+ 
+    public static void SaveInitialData(){
+
     }
 
 }
