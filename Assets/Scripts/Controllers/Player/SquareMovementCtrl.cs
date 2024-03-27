@@ -28,7 +28,6 @@ public class SquareMovementCtrl : MonoBehaviour {
 
     void Start() {
         rigidBody =  GetComponent<Rigidbody2D>();
-        //GetComponent<Rigidbody2D>().inertia = 0;
     }
 
     // Update is called once per frame
@@ -62,9 +61,9 @@ public class SquareMovementCtrl : MonoBehaviour {
         }
     }
 
+    #region Jump
     private void Jump(){
         // Apply vertical force to make the player jump
-        //rigidBody.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
         rigidBody.velocity = Vector2.up * jumpForce;
     }
 
@@ -77,9 +76,11 @@ public class SquareMovementCtrl : MonoBehaviour {
         }
         return false;
     }
+    
     private void OnDrawGizmos() {
         Vector2 position = new Vector2(transform.position.x, transform.position.y - jumpColliderOffset);
         Gizmos.color = Color.blue;
         Gizmos.DrawWireCube(position, jumpRange);
     }
+    #endregion
 }
