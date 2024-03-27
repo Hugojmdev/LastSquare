@@ -1228,7 +1228,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 307976091}
   m_BodyType: 2
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -1243,8 +1243,8 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!66 &307976096
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -10468,7 +10468,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.52
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 2
@@ -10479,7 +10479,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -10495,8 +10495,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e659feb37cb1a3042bc55ca08ed573b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5.7
-  jumpForce: 10
+  moveSpeed: 8
+  jumpForce: 15
   jumpRange: {x: 0.96, y: 0.1}
   jumpColliderOffset: 0.06
 --- !u!61 &2086763781
