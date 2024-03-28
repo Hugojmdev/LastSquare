@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SquareMovementCtrl : MonoBehaviour {
+public class PlayerMovementCtrl : MonoBehaviour {
 
     #region Walk variables
 
@@ -49,16 +49,8 @@ public class SquareMovementCtrl : MonoBehaviour {
         Vector3 newPosition = transform.position + new Vector3(movement, 0f, 0f);
         // Apply the new position
         transform.position = newPosition;
-        //Flip square depending on which direction is walking
-        Flip(horizontalInput);
-    }
-
-    private void Flip(float horizontalInput){
-        if(horizontalInput > 0.0) { //facing right
-            transform.localScale = new Vector2(1, transform.localScale.y);
-        } else if(horizontalInput < 0.0) {//facing left
-            transform.localScale = new Vector2(-1, transform.localScale.y);
-        }
+        //Flip player depending on the horizontal input
+        if (horizontalInput !=0) transform.localScale = new Vector2(horizontalInput, transform.localScale.y);
     }
 
     #region Jump

@@ -1,10 +1,10 @@
 [System.Serializable]
 public class Data {
-    public Square square;
+    public Player player;
 
     public Data(){}
 
-    public Data(Square square){
-        this.square = square;
+    public Data(Player player){
+        this.player = player;
     }
 }

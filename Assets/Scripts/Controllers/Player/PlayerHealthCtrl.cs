@@ -1,32 +1,32 @@
 using UnityEngine;
 
-public class SquareHealthCtrl : MonoBehaviour {
+public class PlayerHealthCtrl : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        Debug.Log("Health = " + DataManager.Load().square.health);
+        Debug.Log("Health = " + DataManager.Load().player.health);
 
-        //Will check if the square is alive, if not it will trigger die actions
+        //Will check if the player is alive, if not it will trigger die actions
         if(!IsAlive()) Die();
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
-        //Will update square health when hit spikes and it's still alive
+        //Will update player health when hit spikes and it's still alive
         if(other.gameObject.CompareTag(Tag.SPIKE) && IsAlive()) UpdateHealth(-1);
     }
 
     //Will update health with the given +/- value
     public void UpdateHealth(int value) {
-        Square square = DataManager.Load().square;
-        square.health += value;
-        DataManager.Save(new Data(square));
+        Player player = DataManager.Load().player;
+        player.health += value;
+        DataManager.Save(new Data(player));
     }
 
-    //Verifies if the square is alive.
+    //Verifies if the player is alive.
     public bool IsAlive() {
         int min = 0;
         int max = 6;
-        int health = DataManager.Load().square.health;
+        int health = DataManager.Load().player.health;
         return health > min && health <= max;
     }
 
