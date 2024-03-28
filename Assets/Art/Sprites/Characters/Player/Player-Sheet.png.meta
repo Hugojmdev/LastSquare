@@ -1,9 +1,12 @@
 fileFormatVersion: 2
-guid: 6bdad7334cdc0a6488de84c496926d4f
+guid: c8dabcadae810c9448e54cabad798717
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4518225611054890064
+    second: Player-Sheet_0
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -123,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Square-Sheet_0
+      name: Player-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -135,16 +138,16 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9bc3b4c4096a68b4691e1d829f019798
-      internalID: -2060859710
+      spriteID: 05cbff13146f3be30800000000000000
+      internalID: 4518225611054890064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Square-Sheet_1
+      name: Player-Sheet_1
       rect:
         serializedVersion: 2
         x: 64
@@ -158,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01b8862d776dc604b8118c4718443b6c
-      internalID: -1908698286
+      spriteID: efbef52ced53ce54db587cd2ea3dc10b
+      internalID: 455531791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Square-Sheet_2
+      name: Player-Sheet_2
       rect:
         serializedVersion: 2
         x: 128
@@ -179,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa17334c1c58fa745b8ce24c78fa1aa8
-      internalID: 1050189405
+      spriteID: e148c228bf5374749811083442b051db
+      internalID: -1863770572
       vertices: []
       indices: 
       edges: []
@@ -188,7 +191,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 27598ef6b0105c74fb71c35b25d875ad
     internalID: 0
     vertices: []
     indices: 
@@ -196,9 +199,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Square-Sheet_0: -2060859710
-      Square-Sheet_1: -1908698286
-      Square-Sheet_2: 1050189405
+      Player-Sheet_0: 4518225611054890064
+      Player-Sheet_1: 455531791
+      Player-Sheet_2: -1863770572
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
