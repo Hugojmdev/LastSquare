@@ -7,7 +7,7 @@ public class Player {
     public SerializableVector3 position;
     public int health;
     public bool[] triangleBox;
-    public int squares;
+    public float squares;
     public int goldenSquares;
     
 

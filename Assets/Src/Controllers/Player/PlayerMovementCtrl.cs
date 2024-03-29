@@ -54,6 +54,7 @@ public class PlayerMovementCtrl : MonoBehaviour {
     }
 
     #region Jump
+    
     private void Jump(){
         // Apply vertical force to make the player jump
         rigidBody.velocity = Vector2.up * jumpForce;

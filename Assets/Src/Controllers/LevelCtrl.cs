@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class LevelCtrl : MonoBehaviour {
 
+    #region Managers
+    private PlayerDataMgr playerDataMgr;
+    #endregion
+
     private LEVEL_STATE levelState;
     public LEVEL_STATE GetlevelState() => levelState;
     public void SetLevelState(LEVEL_STATE levelState){
@@ -10,13 +14,17 @@ public class LevelCtrl : MonoBehaviour {
     
     // Start is called before the first frame update
     void Start() {
+        playerDataMgr = new PlayerDataMgr();
         //TODO temporary solution, needs to be updated because it's updating to default values everytime game starts.
-        DataManager.Save(new Data(new Player()));
+        playerDataMgr.Save(new Data(new Player()));
     }
 
     // Update is called once per frame
     void Update(){
-        EvaluateLevelState();
+        string playerData = JsonUtility.ToJson(playerDataMgr.GetPlayer());
+        Debug.Log("Player Data = " + playerData);
+
+        //EvaluateLevelState();
     }
 
     public void EvaluateLevelState(){
