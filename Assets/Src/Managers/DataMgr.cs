@@ -4,7 +4,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public abstract class DataMgr {
 
-    static string path = Application.persistentDataPath + "/the-last-square.save";
+    static readonly string path = Application.persistentDataPath + "/the-last-square.save";
     static BinaryFormatter formatter = new BinaryFormatter();
 
     
