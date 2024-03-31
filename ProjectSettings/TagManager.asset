@@ -8,6 +8,10 @@ TagManager:
   - Spike
   - Square
   - HalfSquare
+  - Enemy
+  - DamageSquare
+  - ExplosiveSquare
+  - GroundSquare
   layers:
   - Default
   - TransparentFX

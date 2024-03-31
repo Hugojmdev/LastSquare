@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 753412ae69887804c9e043f2207d5a40
+guid: 060e63e5b05d48f43a5fec298fe7dc39
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 529646648854020529
-    second: Square-Sheet_0
+      213: -1985677170835364103
+    second: Triangle_A-Sheet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,106 +126,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Square-Sheet_0
+      name: Triangle_A-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b18b6922dea95700800000000000000
-      internalID: 529646648854020529
+      spriteID: 9f661c932257174e0800000000000000
+      internalID: -1985677170835364103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Square-Sheet_1
+      name: Triangle_A-Sheet_1
       rect:
         serializedVersion: 2
         x: 64
         y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40f48fd67621c2b4089418b50d1a95f8
-      internalID: 1397379739
+      spriteID: 7952a52c3d767c24599d3adea741d3f5
+      internalID: -1281711789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Square-Sheet_2
+      name: Triangle_A-Sheet_2
       rect:
         serializedVersion: 2
         x: 128
         y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4b9eb600ce7a884aa60c319ee8bc901
-      internalID: -1388573206
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Square-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0cb61b2f28f006a4baaa10b8cf231ea0
-      internalID: -1953937855
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Square-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e72556fe65d6389469bca592fb7456f8
-      internalID: 1661515281
+      spriteID: 4a06ff51725712f43acd93e0cf50cf01
+      internalID: 128390808
       vertices: []
       indices: 
       edges: []
@@ -233,7 +191,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 21cd9da0c463f2448a2bb4527c97d207
+    spriteID: e912c4c2c75571f4188f97fc562c0f02
     internalID: 0
     vertices: []
     indices: 
@@ -241,11 +199,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Square-Sheet_0: 529646648854020529
-      Square-Sheet_1: 1397379739
-      Square-Sheet_2: -1388573206
-      Square-Sheet_3: -1953937855
-      Square-Sheet_4: 1661515281
+      Triangle_A-Sheet_0: -1985677170835364103
+      Triangle_A-Sheet_1: -1281711789
+      Triangle_A-Sheet_2: 128390808
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

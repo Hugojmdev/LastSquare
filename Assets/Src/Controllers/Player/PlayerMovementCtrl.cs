@@ -65,6 +65,7 @@ public class PlayerMovementCtrl : MonoBehaviour {
     private bool IsGrounded(){
         Vector2 position = new Vector2(transform.position.x, transform.position.y - jumpColliderOffset);
         RaycastHit2D hit = Physics2D.BoxCast(position, jumpRange, 0.0f, Vector2.down,  0.0f);
+        //Will check if is hitting any collider allowed to jump.
         if (hit.collider != null && Tag.JUMP_TAGS.Contains(hit.collider.tag)) {
             return true;
         }

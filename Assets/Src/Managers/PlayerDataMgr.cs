@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class PlayerDataMgr : DataMgr {
     
-    public Player GetPlayer(){
-        return GetData().player;
-    }
+    public Player GetPlayer() => GetData().player;
+    
+    //Verifies if the player is alive.
+    public bool IsAlive() => GetPlayer().health > 0;
 
     //Will update health amount based on the given +/- value
     public void UpdateHealth(int value) {
@@ -19,13 +20,4 @@ public class PlayerDataMgr : DataMgr {
         player.squares += value;
         Save(new Data(player));
     }
-
-    //Verifies if the player is alive.
-    public bool IsAlive() {
-        int min = 0;
-        int max = 6;
-        int health = GetPlayer().health;
-        return health > min && health <= max;
-    }
-
 }

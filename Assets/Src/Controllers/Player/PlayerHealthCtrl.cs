@@ -15,8 +15,15 @@ public class PlayerHealthCtrl : MonoBehaviour {
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
-        //Will update player health when hit spikes and it's still alive
-        if(other.gameObject.CompareTag(Tag.SPIKE) && playerDataMgr.IsAlive()) playerDataMgr.UpdateHealth(-1);
+
+        //Verify if player is still alive
+        if(playerDataMgr.IsAlive()){
+            //Will update player health when hits spikes
+            if(other.gameObject.CompareTag(Tag.SPIKE)) playerDataMgr.UpdateHealth(-1);
+            //Will update player health when hits enemy
+            if(other.gameObject.CompareTag(Tag.ENEMY)) playerDataMgr.UpdateHealth(-1);
+
+        }
     }
 
     //Triggers die actions.
