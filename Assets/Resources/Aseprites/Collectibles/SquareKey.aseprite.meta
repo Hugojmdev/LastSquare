@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f2a2295f2c9d4ba489783895c45dbf8a
+guid: f22e25c034a1b0043aa9efe0f098635a
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Triangle_A
+  - name: SquareKey
     originalName: 
-    pivot: {x: 0.6666667, y: 0}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 192
-      height: 128
-    spriteID: 8618224997c83514db8e1599e4540068
+      width: 256
+      height: 256
+    spriteID: c28ed11a99d5d9e49afd67b9736b13d5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,24 +144,24 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 734370998
-    name: Triangle_A
+    guid: -443341924
+    name: SquareKey
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Triangle_A
+    - name: SquareKey
       frameIndex: 0
       cellRect:
         x: 0
         y: 0
-        width: 192
-        height: 128
-      spriteId: 8618224997c83514db8e1599e4540068
+        width: 256
+        height: 256
+      spriteId: c28ed11a99d5d9e49afd67b9736b13d5
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 256, y: 128}
+  canvasSize: {x: 256, y: 256}
