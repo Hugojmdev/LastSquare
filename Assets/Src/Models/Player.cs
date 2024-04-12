@@ -6,9 +6,12 @@ public class Player {
     public int level;
     public SerializableVector3 position;
     public int health;
+
+    #region helpers data
     public bool[] triangleBox;
     public float squares;
     public int goldenSquares;
+    #endregion
     
 
     public Player(){

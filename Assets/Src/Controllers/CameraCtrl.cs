@@ -1,22 +1,12 @@
-using System;
 using UnityEngine;
 
 public class CameraCtrl : MonoBehaviour {
     
     [SerializeField]
-    private Transform target; // Reference to the player's transform
+    private GameObject target; // Target to be followed
 
     [SerializeField]
-    private Vector3 offset;   // Offset from the target position
-
-    [SerializeField]
-    private float smoothSpeed = 0.125f; // Speed of camera movement
-
-    [SerializeField]
-    private float topGap = 3f;
-
-    [SerializeField]
-    private float botGap = 2f;
+    private Vector3 offset; // Offset from the target position
 
     [SerializeField]
     private Transform topLimit;
@@ -24,47 +14,68 @@ public class CameraCtrl : MonoBehaviour {
     [SerializeField]
     private Transform botLimit;
 
-    private Vector3 previousPosition;
+    [SerializeField]
+    private float speed = 5f; // Speed of camera movement
+
+    [SerializeField]
+    private float smoothSpeed = 2f;
+
+    [SerializeField]
+    private float lookOffset;
+
+    private Vector3 targetPosition;
+    private Rigidbody2D targetRigidBody;
 
     private void Start() {
         //Set initial positions for camera following
-        transform.position = target.position + offset;
-        previousPosition = target.position;
+        targetPosition = new Vector3(target.transform.position.x + offset.x, target.transform.position.y + offset.y, transform.position.z);
+        transform.position = targetPosition;
+        targetRigidBody = target.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update(){
+    void LateUpdate(){
+        //Follows the target
         FollowTarget();
     }
+    
+    //Sets x offset depending on facing direction
+    private void SetHorizontalOffset(){
+        float facingDirection = Input.GetAxisRaw("Horizontal");
+        //Set offset depending on target facing direction.
+        if(facingDirection > 0) lookOffset = Mathf.Lerp(lookOffset, offset.x, Time.deltaTime * smoothSpeed);
+        if(facingDirection < 0) lookOffset = Mathf.Lerp(lookOffset, -offset.x, Time.deltaTime * smoothSpeed);
+    }
 
-    //Follow the target
-    private void FollowTarget() {
+    //Will follow a target depending on its behavior
+    private void FollowTarget(){
         if (target != null) {
-            // Calculate the desired position for the camera
-            Vector3 targetPosition = target.position;
-            targetPosition.x += offset.x;
-            targetPosition.y = GetTargetY();
-            targetPosition.z = offset.z;
-
-            // Smoothly interpolate between the current position and the desired position
-            transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * smoothSpeed);
+            //Calculates the horizontal offet to apply in x position
+            SetHorizontalOffset();
+            //Set target X position according to the given target position
+            targetPosition.x = target.transform.position.x + lookOffset;
+            //Verifies if camera can update Y position
+            if(IsTargetOutOfLimit() && (IsTargetGrounded() || IsTargetFalling())){
+                targetPosition.y = target.transform.position.y + offset.y;
+            }
+            //Set target position to the camera position applying movement speed
+            transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * speed);
         }
     }
 
-    //Gets y position depending on the camera limits
-    private float GetTargetY(){
-        float y = previousPosition.y + offset.y;
-
-        //Evaluate the distance between target in top limit
-        int topDistance = Math.Abs((int)topLimit.position.y - (int)target.position.y);
-        //Evaluate the distance between target in bot limit
-        int botDistance = Math.Abs((int)botLimit.position.y - (int)target.position.y);
-
-        //Updates the y position if there is a top or bot gap
-        if((topDistance <= topGap ) || (botDistance <= botGap)){
-            y = target.position.y + offset.y;
-            previousPosition = target.position; 
-        }
-        return y;
+    //Verifies if target is grounded
+    private bool IsTargetGrounded(){
+        Vector2 groundRange = new(0.96f, 0.1f);
+        float groundCastOffset = 0.06f;
+        Vector2 position = new(target.transform.position.x, target.transform.position.y - groundCastOffset);
+        return CastHelper.IsWithin2DBox(position, groundRange, Vector2.down, Tag.GROUNDED_TAGS);
     }
+
+    private bool IsTargetOutOfLimit() => IsTargetInTop() || IsTargetInBot();
+
+    private bool IsTargetInTop() => target.transform.position.y >= topLimit.position.y;
+
+    private bool IsTargetInBot() => target.transform.position.y <= botLimit.position.y;
+
+    private bool IsTargetFalling() => targetRigidBody.velocity.y < 0 && !IsTargetGrounded() && IsTargetInBot();
 }

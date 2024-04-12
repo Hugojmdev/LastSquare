@@ -12,6 +12,7 @@ TagManager:
   - DamageSquare
   - ExplosiveSquare
   - GroundSquare
+  - CameraLimit
   layers:
   - Default
   - TransparentFX

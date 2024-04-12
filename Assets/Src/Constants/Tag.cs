@@ -12,7 +12,8 @@ public static class Tag {
     public const string HALF_SQUARE = "HalfSquare";
     public const string GOLDEN_SQUARE = "GoldenSquare";
     public const string ENEMY = "Enemy";
+    public const string CAMERA_LIMIT = "CameraLimit";
 
     public static readonly List<string> SQUARE_TAGS = new () {GROUND_SQUARE, DAMAGE_SQUARE, EXPLOSIVE_SQUARE};
-    public static readonly List<string> JUMP_TAGS = new List<string> () {GROUND, ENEMY}.Concat(SQUARE_TAGS).ToList();
+    public static readonly List<string> GROUNDED_TAGS = new List<string> () {GROUND, ENEMY}.Concat(SQUARE_TAGS).ToList();
 }
