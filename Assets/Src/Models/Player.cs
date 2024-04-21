@@ -19,7 +19,7 @@ public class Player {
         position = new SerializableVector3(Vector3.zero);
         health = 6;
         triangleBox = new bool[5] { false, false, false, false, false };
-        squares = 0;
+        squares = 10;
         goldenSquares = 0;
         
     }

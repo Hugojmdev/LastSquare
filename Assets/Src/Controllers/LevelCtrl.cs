@@ -14,7 +14,7 @@ public class LevelCtrl : MonoBehaviour {
     
     // Start is called before the first frame update
     void Start() {
-        playerDataMgr = new PlayerDataMgr();
+        playerDataMgr = PlayerDataMgr.GetInstance();
         //TODO temporary solution, needs to be updated because it's updating to default values everytime game starts.
         playerDataMgr.Save(new Data(new Player()));
     }
@@ -22,7 +22,7 @@ public class LevelCtrl : MonoBehaviour {
     // Update is called once per frame
     void Update(){
         string playerData = JsonUtility.ToJson(playerDataMgr.GetPlayer());
-        //Debug.Log("Player Data = " + playerData);
+        Debug.Log("Player Data = " + playerData);
 
         //EvaluateLevelState();
     }

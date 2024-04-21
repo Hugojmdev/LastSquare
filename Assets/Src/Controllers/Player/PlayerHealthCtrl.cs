@@ -5,7 +5,7 @@ public class PlayerHealthCtrl : MonoBehaviour {
     private PlayerDataMgr playerDataMgr;
 
     private void Start() {
-        playerDataMgr = new PlayerDataMgr();
+        playerDataMgr = PlayerDataMgr.GetInstance();
     }
 
     // Update is called once per frame

@@ -5,7 +5,7 @@ public class PlayerCollectorCtrl : MonoBehaviour {
     private PlayerDataMgr playerDataMgr;
 
     private void Start() {
-        playerDataMgr = new PlayerDataMgr();
+        playerDataMgr = PlayerDataMgr.GetInstance();
     }
 
     private void OnTriggerEnter2D(Collider2D other) {

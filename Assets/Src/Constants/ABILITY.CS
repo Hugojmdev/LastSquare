@@ -1,0 +1,5 @@
+public enum ABILITY {
+    GROUND_SQUARE,
+    DAMAGE_SQUARE,
+    EXPLOSIVE_SQUARE
+}

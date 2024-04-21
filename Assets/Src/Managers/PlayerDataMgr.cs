@@ -1,6 +1,17 @@
-using UnityEngine;
 
 public class PlayerDataMgr : DataMgr {
+
+    #region Singleton
+    private static PlayerDataMgr Instance;
+
+    private PlayerDataMgr(){}
+
+    public static PlayerDataMgr GetInstance(){
+        // Create a new instance if it doesn't exist
+        Instance ??= new PlayerDataMgr();
+        return Instance;
+    }
+    #endregion
     
     public Player GetPlayer() => GetData().player;
     
