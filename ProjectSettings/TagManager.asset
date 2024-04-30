@@ -9,10 +9,10 @@ TagManager:
   - Square
   - HalfSquare
   - Enemy
-  - DamageSquare
   - ExplosiveSquare
   - GroundSquare
   - CameraLimit
+  - SquareShield
   layers:
   - Default
   - TransparentFX
@@ -22,8 +22,8 @@ TagManager:
   - UI
   - Ground
   - Spikes
-  - 
-  - 
+  - Enemies
+  - Shield
   - 
   - 
   - 

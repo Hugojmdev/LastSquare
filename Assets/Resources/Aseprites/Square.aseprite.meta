@@ -123,14 +123,14 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Square
     originalName: 
-    pivot: {x: 0.6666667, y: 0}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 192
+      width: 256
       height: 128
     spriteID: 85dae56fc113c9f46890898c84a08350
     spriteBone: []
@@ -155,7 +155,7 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 0
-        width: 192
+        width: 256
         height: 128
       spriteId: 85dae56fc113c9f46890898c84a08350
     linkedCells: []

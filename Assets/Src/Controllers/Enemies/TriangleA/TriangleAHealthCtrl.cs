@@ -11,7 +11,7 @@ public class TriangleAHealthCtrl : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D other) {
         //Verifies if it's hitting squares
-        if(other.collider.CompareTag(Tag.DAMAGE_SQUARE) && IsAlive()) UpdateHealth(-1);
+        if(other.collider.CompareTag(Tag.SQUARE_SHIELD) && IsAlive()) UpdateHealth(-1);
     }
 
     //Updates the triangleA health based on a given +/- value.

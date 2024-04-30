@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovementCtrl : MonoBehaviour {
@@ -31,9 +30,11 @@ public class PlayerMovementCtrl : MonoBehaviour {
     #endregion
 
     private Vector3 initialPosition;
+    private SpriteRenderer sprite;
 
     void Start() {
         rigidBody =  GetComponent<Rigidbody2D>();
+        sprite = GetComponent<SpriteRenderer>();
         initialPosition = transform.position;
     }
 
@@ -56,11 +57,10 @@ public class PlayerMovementCtrl : MonoBehaviour {
         //Calculate the movement amount based on input and speed
         rigidBody.velocity = new Vector2(horizontalInput * moveSpeed, rigidBody.velocity.y);
         //Flip player depending on the horizontal input
-        if (horizontalInput !=0) transform.localScale = new Vector2(horizontalInput, transform.localScale.y);
+        if (horizontalInput !=0) sprite.flipX = horizontalInput < 0;//transform.localScale = new Vector2(horizontalInput, transform.localScale.y);
     }
 
     #region Jump
-    
     private void Jump(){
         // Apply vertical force to make the player jump
         rigidBody.velocity = Vector2.up * jumpForce;
@@ -71,6 +71,13 @@ public class PlayerMovementCtrl : MonoBehaviour {
         Vector2 position = new(transform.position.x, transform.position.y - groundCastOffset);
         return CastHelper.IsWithin2DBox(position, groundRange, Vector2.down, Tag.GROUNDED_TAGS);
     }
+
+    private void OnDrawGizmos() {
+        Vector2 position = new(transform.position.x, transform.position.y - groundCastOffset);
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireCube(position, groundRange);
+    }
+    #endregion
 
     private void Isfalling(){
         int fallDistance = Math.Abs((int)transform.position.y - (int)initialPosition.y);
@@ -89,11 +96,4 @@ public class PlayerMovementCtrl : MonoBehaviour {
     public void Restart(){
         transform.position = initialPosition;
     }
-    
-    private void OnDrawGizmos() {
-        Vector2 position = new(transform.position.x, transform.position.y - groundCastOffset);
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireCube(position, groundRange);
-    }
-    #endregion
 }

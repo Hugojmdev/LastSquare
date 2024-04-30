@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6561957781616762958}
   - component: {fileID: 3023769719541556164}
   - component: {fileID: 5915501763935583582}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TriangleA
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -189,6 +189,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   target: {fileID: 0}
+  followingPlayer: 0
 --- !u!114 &5915501763935583582
 MonoBehaviour:
   m_ObjectHideFlags: 0

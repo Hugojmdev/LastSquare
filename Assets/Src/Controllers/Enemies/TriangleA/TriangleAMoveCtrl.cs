@@ -18,6 +18,8 @@ public class TriangleAMoveCtrl : MonoBehaviour {
 
     [SerializeField]
     private GameObject target;
+    [SerializeField]
+    private bool followingPlayer = false;
 
     private bool stunned = false;
 
@@ -27,7 +29,7 @@ public class TriangleAMoveCtrl : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        FollowTarget();
+        if(followingPlayer) FollowTarget();
     }
 
     private void OnCollisionEnter2D(Collision2D other) {

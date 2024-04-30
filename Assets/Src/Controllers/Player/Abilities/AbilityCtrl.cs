@@ -19,14 +19,11 @@ public class AbilityCtrl : MonoBehaviour {
 
     //Class references
     private PlayerDataMgr playerDataMgr;
-    private DamageSquareCtrl damageSquareCtrl;
+    private ShieldCtrl shieldCtrl;
 
-    #region singleton and initialization
+    #region singleton
     public static AbilityCtrl Instance;
     void Awake() {
-        playerDataMgr = PlayerDataMgr.GetInstance();
-        damageSquareCtrl = DamageSquareCtrl.Instance;
-
         //singleton
         if (Instance == null)
             Instance = this;
@@ -34,6 +31,11 @@ public class AbilityCtrl : MonoBehaviour {
             Destroy(gameObject);
     }
     #endregion
+
+    void Start() {
+        playerDataMgr = PlayerDataMgr.GetInstance();
+        shieldCtrl = ShieldCtrl.Instance;
+    }
 
     // Update is called once per frame
     void Update() {
@@ -47,10 +49,10 @@ public class AbilityCtrl : MonoBehaviour {
         int squareAmount = (int)playerDataMgr.GetPlayer().squares;
         //Spawns 'groundSquare' if press 'J' and there are squares available, cost=1 square
         if (Input.GetKeyDown(KeyCode.J) && squareAmount >= 1) SpawnSquare(groundSquare);
-        //Spawns 'damageSquare' if press 'K' and there are squares available, cost=1 square
-        if (Input.GetKeyDown(KeyCode.K) && squareAmount >= 1) damageSquareCtrl.Enable();
-        //Spawns 'explosiveSquare' if press 'L' and there are squares available, cost=2 squares
-        if (Input.GetKeyDown(KeyCode.L) && squareAmount >= 2) SpawnSquare(explosiveSquare);
+        //Spawns 'explosiveSquare' if press 'L' and there are squares available, cost=1 squares
+        if (Input.GetKeyDown(KeyCode.L) && squareAmount >= 1) SpawnSquare(explosiveSquare);
+        //Launch the 'shield' ability if press 'K' and there are squares available, cost=2 square
+        if (Input.GetKeyDown(KeyCode.K) && squareAmount >= 2) shieldCtrl.Launch();
     }
 
     //Spawns a square depending on what key was pressed down and square cost
@@ -71,14 +73,10 @@ public class AbilityCtrl : MonoBehaviour {
 
     //This will verify if target position is available to spawn.
     private bool IsTargetPositionAvailable(){
-        Vector2 position = new(transform.position.x, transform.position.y - colliderOffset);
-        RaycastHit2D hit = Physics2D.BoxCast(position, spawnRange, 0.0f, Vector2.down, 0.0f);
-        if (hit.collider == null) {
-            return true;
-        }
-        return false;
+        return !CastHelper.IsWithin2DBox(new(transform.position.x, transform.position.y - colliderOffset), spawnRange, 
+        Vector3.down, Layers.GROUNDED_LAYERS);
     }
-    
+
     private void OnDrawGizmos() {
         Vector2 position = new(transform.position.x, transform.position.y - colliderOffset);
         Gizmos.color = Color.green;
