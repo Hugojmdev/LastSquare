@@ -20,12 +20,12 @@ public class LevelCtrl : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update(){
-        string playerData = JsonUtility.ToJson(playerDataMgr.GetPlayer());
-        Debug.Log("Player Data = " + playerData);
+    // void Update(){
+    //     string playerData = JsonUtility.ToJson(playerDataMgr.GetPlayer());
+    //     Debug.Log("Player Data = " + playerData);
 
-        //EvaluateLevelState();
-    }
+    //     //EvaluateLevelState();
+    // }
 
     public void EvaluateLevelState(){
         switch(levelState){
