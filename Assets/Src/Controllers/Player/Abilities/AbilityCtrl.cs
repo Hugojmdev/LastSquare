@@ -2,15 +2,18 @@ using UnityEngine;
 
 public class AbilityCtrl : MonoBehaviour {
 
+    [Header("Square Ground")]
     [SerializeField]
-    private GameObject groundSquare;
-
+    private GameObject squareGround;
     [SerializeField]
-    private GameObject damageSquare;
-
+    private Transform squareGroundParent;
+    [Header("Square Explosive")]
     [SerializeField]
     private GameObject explosiveSquare;
+    [SerializeField]
+    private Transform squareExplosiveParent;
     
+    [Header("Spawner")]
     [SerializeField] 
     private Vector2 spawnRange = new(0.97f,0.8f);
 
@@ -47,16 +50,16 @@ public class AbilityCtrl : MonoBehaviour {
     private void TriggerAbility(){
         //Gets amount of squares from player data.
         int squareAmount = (int)playerDataMgr.GetPlayer().squares;
-        //Spawns 'groundSquare' if press 'J' and there are squares available, cost=1 square
-        if (Input.GetKeyDown(KeyCode.J) && squareAmount >= 1) SpawnSquare(groundSquare);
+        //Spawns 'squareGround' if press 'J' and there are squares available, cost=1 square
+        if (Input.GetKeyDown(KeyCode.J) && squareAmount >= 1) SpawnSquareAbility(squareGround);
         //Spawns 'explosiveSquare' if press 'L' and there are squares available, cost=1 squares
-        if (Input.GetKeyDown(KeyCode.L) && squareAmount >= 1) SpawnSquare(explosiveSquare);
+        if (Input.GetKeyDown(KeyCode.L) && squareAmount >= 1) SpawnSquareAbility(explosiveSquare);
         //Launch the 'shield' ability if press 'K' and there are squares available, cost=2 square
         if (Input.GetKeyDown(KeyCode.K) && squareAmount >= 2) shieldCtrl.Launch();
     }
 
     //Spawns a square depending on what key was pressed down and square cost
-     private void SpawnSquare(GameObject squarePrefab){
+     private void SpawnSquareAbility(GameObject squarePrefab){
         if(IsTargetPositionAvailable() && Tag.SQUARE_TAGS.Contains(squarePrefab.tag)) {
             //Get spawn position.
             Vector3 playerPosition = transform.position;
@@ -64,10 +67,10 @@ public class AbilityCtrl : MonoBehaviour {
             //Instantiates a new consumable object to be spawned with the required components        
             GameObject square = Instantiate(squarePrefab, spawnPosition, Quaternion.identity);
             square.name = squarePrefab.name;
-            square.transform.SetParent(GameObject.Find(LevelObjects.SQUARES).transform);
-            //Update squares amount depending on square type spawned
-            if (squarePrefab.CompareTag(Tag.GROUND_SQUARE)) playerDataMgr.UpdateSquares(-1);
-            if (squarePrefab.CompareTag(Tag.EXPLOSIVE_SQUARE)) playerDataMgr.UpdateSquares(-2);
+            //Set parent to the spawned square
+            if (squarePrefab.CompareTag(Tag.SQUARE_GROUND)) square.transform.SetParent(squareGroundParent);
+            if (squarePrefab.CompareTag(Tag.EXPLOSIVE_SQUARE)) square.transform.SetParent(squareExplosiveParent);
+            playerDataMgr.UpdateSquares(-1);
         }
     }
 

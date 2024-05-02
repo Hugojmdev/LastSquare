@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 1030644970, guid: 753412ae69887804c9e043f2207d5a40, type: 3}
+  m_Sprite: {fileID: -1663573633, guid: 753412ae69887804c9e043f2207d5a40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -206,6 +206,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf5876f57ae815a479fc4997aeae47d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareShieldSprite: {fileID: 1030644970, guid: 753412ae69887804c9e043f2207d5a40, type: 3}
-  brokenSquareShieldSprite: {fileID: -1663573633, guid: 753412ae69887804c9e043f2207d5a40, type: 3}
+  squareShieldSprite: {fileID: -1663573633, guid: 753412ae69887804c9e043f2207d5a40, type: 3}
+  brokenSquareShieldSprite: {fileID: 1590390073, guid: 753412ae69887804c9e043f2207d5a40, type: 3}
   material2D: {fileID: 6200000, guid: 01b3db3fc17c2e14baed0edb3486afe7, type: 2}

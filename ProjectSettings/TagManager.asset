@@ -10,9 +10,9 @@ TagManager:
   - HalfSquare
   - Enemy
   - ExplosiveSquare
-  - GroundSquare
   - CameraLimit
   - SquareShield
+  - SquareGround
   layers:
   - Default
   - TransparentFX

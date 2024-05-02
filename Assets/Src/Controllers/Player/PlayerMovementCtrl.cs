@@ -27,12 +27,15 @@ public class PlayerMovementCtrl : MonoBehaviour {
 
     #region components
     private Rigidbody2D rigidBody;
+    private SpriteRenderer sprite;
     #endregion
 
     private Vector3 initialPosition;
-    private SpriteRenderer sprite;
+
+    private PlayerDataMgr playerDataMgr;
 
     void Start() {
+        playerDataMgr = PlayerDataMgr.GetInstance();
         rigidBody =  GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         initialPosition = transform.position;
@@ -49,6 +52,9 @@ public class PlayerMovementCtrl : MonoBehaviour {
         } 
 
         Isfalling();
+        
+        //update player position
+        playerDataMgr?.UpdatePosition(transform.position);
     }
 
     private void Walk(){

@@ -33,7 +33,7 @@ public class TriangleAMoveCtrl : MonoBehaviour {
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
-        if(other.collider.CompareTag(Tag.GROUND_SQUARE) || other.collider.CompareTag(Tag.PLAYER)) StartCoroutine(Stun());
+        if(other.collider.CompareTag(Tag.SQUARE_GROUND) || other.collider.CompareTag(Tag.PLAYER)) StartCoroutine(Stun());
     }
 
     //Will follow a given target when is in range.

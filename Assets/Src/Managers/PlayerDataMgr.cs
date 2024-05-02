@@ -1,4 +1,7 @@
 
+
+using UnityEngine;
+
 public class PlayerDataMgr : DataMgr {
 
     #region Singleton
@@ -29,6 +32,13 @@ public class PlayerDataMgr : DataMgr {
     public void UpdateSquares(float value){
         Player player = GetPlayer();
         player.squares += value;
+        Save(new Data(player));
+    }
+
+    //Updates player position
+    public void UpdatePosition(Vector3 position){
+        Player player = GetPlayer();
+        player.position = new SerializableVector3(position);
         Save(new Data(player));
     }
 }
