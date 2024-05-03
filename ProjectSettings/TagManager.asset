@@ -9,10 +9,10 @@ TagManager:
   - Square
   - HalfSquare
   - Enemy
-  - ExplosiveSquare
   - CameraLimit
   - SquareShield
   - SquareGround
+  - SquareExplosive
   layers:
   - Default
   - TransparentFX
@@ -24,7 +24,7 @@ TagManager:
   - Spikes
   - Enemies
   - Shield
-  - 
+  - Abilities
   - 
   - 
   - 
