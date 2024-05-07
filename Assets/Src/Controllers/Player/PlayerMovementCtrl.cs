@@ -75,7 +75,7 @@ public class PlayerMovementCtrl : MonoBehaviour {
     //This will verify if player is grounded.
     public bool IsGrounded(){
         Vector2 position = new(transform.position.x, transform.position.y - groundCastOffset);
-        return CastHelper.IsWithin2DBox(position, groundRange, Vector2.down, Tag.GROUNDED_TAGS);
+        return CastHelper.IsWithin2DBox(position, groundRange, Vector2.down, Layers.GROUNDED_LAYERS);
     }
 
     private void OnDrawGizmos() {

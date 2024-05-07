@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5405281509482159171}
   - component: {fileID: 1976195973071900436}
   - component: {fileID: 5101797059621568098}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: SquareGround
   m_TagString: SquareGround
   m_Icon: {fileID: 0}

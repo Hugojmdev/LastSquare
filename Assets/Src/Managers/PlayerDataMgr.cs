@@ -24,7 +24,8 @@ public class PlayerDataMgr : DataMgr {
     //Will update health amount based on the given +/- value
     public void UpdateHealth(int value) {
         Player player = GetPlayer();
-        player.health += value;
+        int health = player.health += value;
+        player.health = health <= 0 ? 0 : health;
         Save(new Data(player));
     }
 

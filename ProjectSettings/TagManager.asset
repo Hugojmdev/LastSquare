@@ -13,6 +13,7 @@ TagManager:
   - SquareShield
   - SquareGround
   - SquareExplosive
+  - Destructible
   layers:
   - Default
   - TransparentFX
@@ -25,8 +26,8 @@ TagManager:
   - Enemies
   - Shield
   - Abilities
-  - 
-  - 
+  - Explosive
+  - Destructible
   - 
   - 
   - 
