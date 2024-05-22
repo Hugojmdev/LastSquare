@@ -156,7 +156,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      resurrect-64-32x_0: 780822073488708043
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
