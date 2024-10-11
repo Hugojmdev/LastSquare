@@ -57,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -81,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -135,10 +135,10 @@ TextureImporter:
       name: EnvironmentTileSet-Sheet_0
       rect:
         serializedVersion: 2
-        x: 63
-        y: 127
-        width: 386
-        height: 322
+        x: 64
+        y: 623
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,10 +156,10 @@ TextureImporter:
       name: EnvironmentTileSet-Sheet_1
       rect:
         serializedVersion: 2
-        x: 351
-        y: 287
-        width: 130
-        height: 130
+        x: 128
+        y: 623
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,10 +177,10 @@ TextureImporter:
       name: EnvironmentTileSet-Sheet_2
       rect:
         serializedVersion: 2
-        x: 447
-        y: 63
-        width: 130
-        height: 194
+        x: 192
+        y: 623
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,10 +194,1585 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 623
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35327d98fff773448bfb85548cd0d382
+      internalID: -2097398504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 623
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a34e048e77cae4588189a04b0fa3b2
+      internalID: 684224631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 623
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2df79cbd495c3e4aa12a56ea589aab6
+      internalID: 18169899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 623
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8afa8e5c691a58f4c8ac80fa573a3b4b
+      internalID: 404893431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 623
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1351a488fe8380545b4a14af8c7014a5
+      internalID: 510305691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 623
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5edf138b3a05d6444956c97897042dc4
+      internalID: 1377269199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 623
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76400e3ca181b4a40a0e00e42038a163
+      internalID: 1164484395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 623
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ae02a34def07c438b18eb11d698b1e
+      internalID: 1684908740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 623
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b9d0ca027dbb84492054dd7fce5ff7
+      internalID: -401049079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 559
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971303c7c7983f449bc32d64a80cf75e
+      internalID: 414603910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 559
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092abc54bb81ece42b7ed26299d24b52
+      internalID: 1509028128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 559
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9240c43081123419cac9e53fee092e
+      internalID: 1197770671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 559
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b5fef32aeb9614eae8622c57c398f1
+      internalID: -1791101754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 559
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2da57c16745e9743a39e51064c9427a
+      internalID: 152987670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 559
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4430da71b820140a7e1c4e2f009846
+      internalID: 1734923184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 559
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4534f04097de8147abebeb3c5af8240
+      internalID: 114724137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 559
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65fdd60df8972546ad5be5467610383
+      internalID: -497370553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 559
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9563217a14f281a419384cd3f2d2639b
+      internalID: 300970766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 559
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90645799a84346147b153344e7a8ff83
+      internalID: -46469878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 559
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06eb5bca1b5ed5f4d91d87e3404e7593
+      internalID: -895948540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 495
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d7f5147dbaa504981f891260d3b951
+      internalID: -627839795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 495
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84702e06db9bf6c429e124f85b440350
+      internalID: 244391186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 495
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d98acf19b543f44a0416c8db06cf35
+      internalID: 341369899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 495
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea03362e55dd3e84ba0e918a873ef0f0
+      internalID: -637400220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 495
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660b8d72e1367f646ae8d9458c7d5531
+      internalID: 99373846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 495
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038ca67e2a595074c8031a418049d209
+      internalID: 888389350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 495
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a62cc77f265b3d41814329eb42b09dd
+      internalID: -1023070355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 495
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44240f6e21985894894403dd844a36a8
+      internalID: -450278794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 495
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f95af7fe3bdb348a7a6b5a1dbb33be
+      internalID: -970771993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 431
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cfd0408bc48ce04cbe36f3448f64951
+      internalID: 402070471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 431
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0334ca37bb1224c8bbe9b087f483d0
+      internalID: 823315527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 431
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e000f365c694b834b8f6b5e1b0930c0d
+      internalID: 640545614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 431
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d331592bc88e04daa987899f045e9c
+      internalID: -1516938870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 431
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f946f9bb38633864984706f13778d336
+      internalID: 857480566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 431
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80208e2e6fe1b434dac9e1f005135fbb
+      internalID: -1060726913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 431
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f11bb1fc2a9d647970160ae2c5f5a6
+      internalID: 1375294163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 431
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dca6825220d0a94a9c84bd1d0604ced
+      internalID: -658254240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 431
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47601dfc83c5df14ea324aab21552133
+      internalID: 1861896072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 431
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20cc73f94c8f0c045bbf21e20ceb1dee
+      internalID: 1509867031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 367
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d80cc17ff1b58e4fb3a4bbdcd734c6c
+      internalID: -802162013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 367
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b016924d55098d4bbd72aaee8464e19
+      internalID: -762283639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 367
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83e2127942444345876691689e1bb19
+      internalID: -711099719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 367
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2a652bf45dda94e92d7003b31d0ccc
+      internalID: 138224413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 367
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a06502f7284374db4beeb9e73efb07
+      internalID: -1672747002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 303
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86bdb9fff64bc504c90208bf6d20013a
+      internalID: 676390125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 303
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6129284a176770041a94b7d1e184d3e3
+      internalID: -1950270332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 303
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1611e87052957e4bb4961989c6afc3b
+      internalID: 2027915985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 303
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58e3da10441f7c48bfe4f1411d143fc
+      internalID: -1863984878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 303
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d2b5902f4c35b49b7ffc26e77065f0
+      internalID: -1093745687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 303
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98293484a6015d945841d35e2f7da78f
+      internalID: -924547732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 303
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157557516b0c0f24897a08dcfff25672
+      internalID: -1379896908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 303
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63eb5c8340c5646469539bfd41e95481
+      internalID: 762878848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 303
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a806dc2f2c90f684f82ba20874c26090
+      internalID: 573291716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 303
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f7ad8f6cbdda5640b828cad53b1dd19
+      internalID: -604823977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 239
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642fd30fffcc46b4d994ab6980fb3959
+      internalID: 1048002344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 239
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291fc64592299c141b1a4ddd7b4ebf37
+      internalID: 1620862697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 239
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4913dfce857663e4eb1a66091b7dafcc
+      internalID: -91424037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 239
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7a13b095e11a04d904808011938508
+      internalID: -302590078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 239
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6355db51683d946afff3bcf41cab82
+      internalID: -1837162344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 239
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b124bfe1533b17340a1c9b2dd8b15701
+      internalID: 1897750231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 175
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d68368c9b2c1d499142810caa3e89f
+      internalID: 1577877426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 175
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e112ae631f34f9049a5307b1a28f05e1
+      internalID: 1716276624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 175
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e7420ac845dde4fa4a872af149454f
+      internalID: -1425975792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 175
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786a369e41ff14f4e9fcd9d440ff957b
+      internalID: 589751037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 175
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed03838ab2008c4ead7be548ef95624
+      internalID: -1616198812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 175
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48b6c5f46062fd4e956da422a2615a3
+      internalID: 1089058988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 175
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458dc182d03c9a144a2af80fdf456a1b
+      internalID: -2031153120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 175
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d38f55334693f54788f80d7933f27c2
+      internalID: -973279494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 111
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9a79622e397cf489ccee0ad17e5a89
+      internalID: 1794359622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 111
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cedb3e342179b14898b6f5a206c6f7d
+      internalID: -888953954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 111
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d727c1da2e291494bbf5bb26806cdb24
+      internalID: 2025055484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 111
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3dff6200b28ad1438827edc51180f8c
+      internalID: 1555512150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 47
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8dbfb73b65b134c8113ba77e0068c4
+      internalID: -2034998405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 47
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f267a0e2166e544bbda93e4a9e9c5c
+      internalID: 2009876505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnvironmentTileSet-Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 47
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f6e72742d586e42958ff26c97c750a
+      internalID: -1584617639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e68be88a029264f45948dfe9ee7971cb
     internalID: 0
     vertices: []
     indices: 
@@ -207,7 +1782,82 @@ TextureImporter:
     nameFileIdTable:
       EnvironmentTileSet-Sheet_0: -8423183357407701580
       EnvironmentTileSet-Sheet_1: 5991821552958391734
+      EnvironmentTileSet-Sheet_10: 1684908740
+      EnvironmentTileSet-Sheet_11: -401049079
+      EnvironmentTileSet-Sheet_12: 414603910
+      EnvironmentTileSet-Sheet_13: 1509028128
+      EnvironmentTileSet-Sheet_14: 1197770671
+      EnvironmentTileSet-Sheet_15: -1791101754
+      EnvironmentTileSet-Sheet_16: 152987670
+      EnvironmentTileSet-Sheet_17: 1734923184
+      EnvironmentTileSet-Sheet_18: 114724137
+      EnvironmentTileSet-Sheet_19: -497370553
       EnvironmentTileSet-Sheet_2: 4313023290606389212
+      EnvironmentTileSet-Sheet_20: 300970766
+      EnvironmentTileSet-Sheet_21: -46469878
+      EnvironmentTileSet-Sheet_22: -895948540
+      EnvironmentTileSet-Sheet_23: -627839795
+      EnvironmentTileSet-Sheet_24: 244391186
+      EnvironmentTileSet-Sheet_25: 341369899
+      EnvironmentTileSet-Sheet_26: -637400220
+      EnvironmentTileSet-Sheet_27: 99373846
+      EnvironmentTileSet-Sheet_28: 888389350
+      EnvironmentTileSet-Sheet_29: -1023070355
+      EnvironmentTileSet-Sheet_3: -2097398504
+      EnvironmentTileSet-Sheet_30: -450278794
+      EnvironmentTileSet-Sheet_31: -970771993
+      EnvironmentTileSet-Sheet_32: 402070471
+      EnvironmentTileSet-Sheet_33: 823315527
+      EnvironmentTileSet-Sheet_34: 640545614
+      EnvironmentTileSet-Sheet_35: -1516938870
+      EnvironmentTileSet-Sheet_36: 857480566
+      EnvironmentTileSet-Sheet_37: -1060726913
+      EnvironmentTileSet-Sheet_38: 1375294163
+      EnvironmentTileSet-Sheet_39: -658254240
+      EnvironmentTileSet-Sheet_4: 684224631
+      EnvironmentTileSet-Sheet_40: 1861896072
+      EnvironmentTileSet-Sheet_41: 1509867031
+      EnvironmentTileSet-Sheet_42: -802162013
+      EnvironmentTileSet-Sheet_43: -762283639
+      EnvironmentTileSet-Sheet_44: -711099719
+      EnvironmentTileSet-Sheet_45: 138224413
+      EnvironmentTileSet-Sheet_46: -1672747002
+      EnvironmentTileSet-Sheet_47: 676390125
+      EnvironmentTileSet-Sheet_48: -1950270332
+      EnvironmentTileSet-Sheet_49: 2027915985
+      EnvironmentTileSet-Sheet_5: 18169899
+      EnvironmentTileSet-Sheet_50: -1863984878
+      EnvironmentTileSet-Sheet_51: -1093745687
+      EnvironmentTileSet-Sheet_52: -924547732
+      EnvironmentTileSet-Sheet_53: -1379896908
+      EnvironmentTileSet-Sheet_54: 762878848
+      EnvironmentTileSet-Sheet_55: 573291716
+      EnvironmentTileSet-Sheet_56: -604823977
+      EnvironmentTileSet-Sheet_57: 1048002344
+      EnvironmentTileSet-Sheet_58: 1620862697
+      EnvironmentTileSet-Sheet_59: -91424037
+      EnvironmentTileSet-Sheet_6: 404893431
+      EnvironmentTileSet-Sheet_60: -302590078
+      EnvironmentTileSet-Sheet_61: -1837162344
+      EnvironmentTileSet-Sheet_62: 1897750231
+      EnvironmentTileSet-Sheet_63: 1577877426
+      EnvironmentTileSet-Sheet_64: 1716276624
+      EnvironmentTileSet-Sheet_65: -1425975792
+      EnvironmentTileSet-Sheet_66: 589751037
+      EnvironmentTileSet-Sheet_67: -1616198812
+      EnvironmentTileSet-Sheet_68: 1089058988
+      EnvironmentTileSet-Sheet_69: -2031153120
+      EnvironmentTileSet-Sheet_7: 510305691
+      EnvironmentTileSet-Sheet_70: -973279494
+      EnvironmentTileSet-Sheet_71: 1794359622
+      EnvironmentTileSet-Sheet_72: -888953954
+      EnvironmentTileSet-Sheet_73: 2025055484
+      EnvironmentTileSet-Sheet_74: 1555512150
+      EnvironmentTileSet-Sheet_75: -2034998405
+      EnvironmentTileSet-Sheet_76: 2009876505
+      EnvironmentTileSet-Sheet_77: -1584617639
+      EnvironmentTileSet-Sheet_8: 1377269199
+      EnvironmentTileSet-Sheet_9: 1164484395
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
